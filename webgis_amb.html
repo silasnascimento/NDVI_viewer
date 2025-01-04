@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGIS Ambiental com Leaflet</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h2>WebGIS Ambiental com Leaflet</h2>
+    <p>Desenhe uma área no mapa para obter informações ambientais.</p>
+    <div id="map"></div>
+    <div id="info"></div>
+    <div id="controls">
+        <input type="text" id="address" placeholder="Digite um endereço">
+        <button id="geocodeButton">Buscar Endereço</button>
+        <button id="exportButton">Exportar Polígono como GeoJSON</button>
+        <br><br>
+        <label for="startDate">Data Inicial:</label>
+        <input type="date" id="startDate" value="2024-01-01">
+        <label for="endDate">Data Final:</label>
+        <input type="date" id="endDate" value="2024-01-28">
+        <button id="updateDataButton">Atualizar Dados</button>
+    </div>
+    
+    <div id="info"></div>
+    <div id="map" style="height: 500px;"></div>    
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>
