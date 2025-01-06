@@ -72,7 +72,7 @@ function fetchEnvironmentalData(coords, startDate, endDate) {
         coordinates: [coords[0].map(latlng => [latlng.lng, latlng.lat])]
     };
 
-    fetch('http://3.144.109.155:5000/calculate_ndvi', {
+    fetch('http://3.147.104.52:5000/calculate_ndvi', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -108,7 +108,7 @@ function fetchNDVITiles(coords, startDate, endDate) {
         coordinates: [coords[0].map(latlng => [latlng.lng, latlng.lat])]
     };
 
-    fetch('http://3.144.109.155:5000/get_ndvi_tiles', {
+    fetch('http://3.147.104.52:5000/get_ndvi_tiles', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
